@@ -1,0 +1,188 @@
+:root {
+  --ntured: #cc0000;
+  --ntublue: #005DAA;
+}
+
+/* Focus styles for accessibility */
+:focus-visible {
+  outline: 3px solid rgba(0, 93, 170, 0.35);
+  outline-offset: 3px;
+}
+
+/* Typography tuning */
+body {
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji",
+    "Segoe UI Emoji";
+}
+
+/* Reusable "pill" badges */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 9999px;
+  border: 1px solid rgba(148, 163, 184, 0.35); /* slate-300-ish */
+  background: rgba(255, 255, 255, 0.75);
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: rgba(30, 41, 59, 0.95); /* slate-800-ish */
+}
+
+.badge-muted {
+  border-color: rgba(148, 163, 184, 0.35);
+}
+
+.badge-accent {
+  border-color: rgba(204, 0, 0, 0.25);
+  color: var(--ntured);
+  background: rgba(204, 0, 0, 0.05);
+}
+
+.badge-accent2 {
+  border-color: rgba(0, 93, 170, 0.25);
+  color: var(--ntublue);
+  background: rgba(0, 93, 170, 0.05);
+}
+
+/* Icon pills used in section headers/cards */
+.icon-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(148, 163, 184, 0.25);
+}
+.icon-green {
+  color: #16a34a;
+  background: rgba(22, 163, 74, 0.08);
+  border-color: rgba(22, 163, 74, 0.18);
+}
+.icon-blue {
+  color: var(--ntublue);
+  background: rgba(0, 93, 170, 0.08);
+  border-color: rgba(0, 93, 170, 0.18);
+}
+.icon-red {
+  color: var(--ntured);
+  background: rgba(204, 0, 0, 0.08);
+  border-color: rgba(204, 0, 0, 0.18);
+}
+
+/* Simple card tiles */
+.award-tile {
+  border-radius: 1rem;
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  background: rgba(255, 255, 255, 0.65);
+  padding: 0.95rem;
+}
+
+.award-title {
+  font-size: 0.95rem;
+  font-weight: 650;
+  color: rgba(2, 6, 23, 0.9);
+}
+
+.award-meta {
+  margin-top: 0.25rem;
+  font-size: 0.85rem;
+  color: rgba(51, 65, 85, 0.95);
+}
+
+.skill-card {
+  border-radius: 1rem;
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  background: rgba(255, 255, 255, 0.65);
+  padding: 1rem;
+}
+
+.skill-title {
+  font-size: 0.95rem;
+  font-weight: 650;
+  color: rgba(2, 6, 23, 0.9);
+}
+
+.skill-pill {
+  border-radius: 9999px;
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  background: rgba(255, 255, 255, 0.7);
+  padding: 0.25rem 0.7rem;
+  font-size: 0.78rem;
+  font-weight: 520;
+  color: rgba(30, 41, 59, 0.95);
+}
+
+/* Nav links */
+.navlink {
+  font-size: 0.92rem;
+  color: rgba(51, 65, 85, 0.95);
+  border-radius: 0.75rem;
+  padding: 0.35rem 0.6rem;
+  border: 1px solid transparent;
+  transition: background 120ms ease, border-color 120ms ease, color 120ms ease, transform 120ms ease;
+}
+
+.navlink:hover {
+  background: rgba(255, 255, 255, 0.7);
+  border-color: rgba(148, 163, 184, 0.35);
+  transform: translateY(-1px);
+  color: rgba(2, 6, 23, 0.9);
+}
+
+/* Contact tiles */
+.contact-tile {
+  border-radius: 1rem;
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  background: rgba(255, 255, 255, 0.65);
+  padding: 0.95rem;
+}
+
+.contact-label {
+  font-size: 0.85rem;
+  font-weight: 650;
+  color: rgba(15, 23, 42, 0.9);
+}
+
+.contact-link {
+  display: inline-block;
+  margin-top: 0;
+  font-weight: 650;
+  color: rgba(0, 93, 170, 0.98);
+  text-decoration: none;
+}
+
+.contact-value {
+  margin-top: 0.35rem;
+}
+
+.contact-link.button-like {
+  margin-top: 0;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
+
+.contact-note {
+  margin-top: 0.55rem;
+  font-size: 0.85rem;
+  color: rgba(71, 85, 105, 0.95);
+}
+
+/* Minor responsive improvements */
+@media (max-width: 640px) {
+  .badge {
+    padding: 0.2rem 0.6rem;
+  }
+}
+
+/* Overrides (fixes invalid selectors at the top of the file) */
+:root {
+  --ntured: #cc0000;
+  --ntublue: #005DAA;
+}
+
+:focus-visible {
+  outline: 3px solid rgba(0, 93, 170, 0.35);
+  outline-offset: 3px;
+}
+

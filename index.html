@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Academic homepage of Gao Yunzhe (高蕴喆): Efficient & Trustworthy Multi-Modal AI." />
+    <title>Gao Yunzhe — Academic Homepage</title>
+
+    <!-- Tailwind (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              ntured: "#cc0000",
+              ntublue: "#005DAA",
+              slatebg: "#f6f7fb"
+            },
+            boxShadow: {
+              soft: "0 10px 30px rgba(16,24,40,0.08)",
+              card: "0 8px 22px rgba(16,24,40,0.08)"
+            }
+          }
+        }
+      };
+    </script>
+
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body class="h-full bg-slatebg text-slate-900 antialiased">
+    <a
+      href="#main"
+      class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-50 focus:rounded-md focus:bg-white focus:px-4 focus:py-2 focus:shadow"
+    >
+      Skip to content
+    </a>
+
+    <div class="pointer-events-none absolute inset-x-0 top-0 h-56 bg-gradient-to-b from-ntublue/10 via-transparent to-transparent"></div>
+
+    <header class="relative">
+      <div class="mx-auto max-w-5xl px-4 pt-10 pb-6">
+        <div class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+          <div class="min-w-0">
+            <h1 class="text-3xl font-semibold tracking-tight sm:text-4xl">
+              Gao Yunzhe&nbsp;&nbsp;<span>高蕴喆</span>
+            </h1>
+            <p class="mt-2 text-lg text-slate-700">
+              M.Sc. Student at
+              <a class="text-ntublue hover:underline" href="https://www.ntu.edu.sg/" target="_blank" rel="noreferrer noopener">Nanyang Technological University (NTU)</a>
+            </p>
+            <p class="mt-2 inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white/70 px-3 py-1 text-sm text-slate-700 shadow-sm">
+              <span class="inline-block h-2 w-2 rounded-full bg-ntured"></span>
+              Efficient &amp; Trustworthy Multi-Modal AI
+            </p>
+          </div>
+
+          <nav aria-label="Primary" class="flex flex-wrap gap-2 sm:justify-end">
+            <a class="navlink" href="#about">About</a>
+            <a class="navlink" href="#projects">Research &amp; Projects</a>
+            <a class="navlink" href="#awards">Honors</a>
+            <a class="navlink" href="#skills">Skills</a>
+            <a class="navlink" href="#contact">Contact</a>
+            <a class="navlink" href="./cn.html" aria-label="Switch to Chinese page">中文</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main id="main" class="relative">
+      <section class="mx-auto max-w-5xl px-4 pb-12">
+        <!-- About -->
+        <div id="about" class="rounded-2xl bg-white/80 p-6 shadow-soft ring-1 ring-slate-200/60 sm:p-8">
+          <div class="flex items-center gap-3">
+            <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-ntublue/10 text-ntublue ring-1 ring-ntublue/15">
+              <!-- info icon -->
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Z" stroke="currentColor" stroke-width="2"/>
+                <path d="M12 16v-5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M12 8h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </span>
+            <h2 class="text-xl font-semibold tracking-tight">About Me</h2>
+          </div>
+
+          <div class="mt-5 grid gap-6 lg:grid-cols-12 lg:items-start">
+            <div class="lg:col-span-7">
+              <p class="text-slate-700 leading-relaxed">
+                I am a graduate student at NTU working on efficient AI systems, with a focus on lightweight model deployment and practical
+                edge-cloud collaboration. My work aims to improve both performance and reliability for real-world applications.
+              </p>
+
+              <div class="mt-5 space-y-3">
+                <div class="space-y-0.5">
+                  <span class="badge">M.Sc.</span>
+                  <p class="text-slate-700">
+                    Computer Control and Automation, Nanyang Technological University
+                    <br />
+                    <span class="font-medium">GPA 4.75 / 5.0</span>.
+                    <br />
+                  </p>
+                </div>
+                <div class="space-y-0.5">
+                  <span class="badge">B.E.</span>
+                  <p class="text-slate-700">
+                    Automation, Northeastern University (Shenyang, China)
+                    <br />
+                    <span class="font-medium">GPA 3.76 / 5.0</span> (Avg. Score: 87.6 / 100).
+                    <br />
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="lg:col-span-5">
+              <div class="rounded-2xl bg-white p-5 shadow-card ring-1 ring-slate-200/70">
+                <p class="text-sm font-semibold text-slate-900">Current focus</p>
+                <p class="mt-2 text-slate-700 leading-relaxed">
+                  Master dissertation: <span class="font-medium">Design and Deployment of Lightweight LLMs for Efficient, Localized Deployment</span>.
+                </p>
+                <div class="mt-4 space-y-3">
+                  <div class="flex items-start gap-3">
+                    <span class="mt-0.5 inline-flex h-8 w-8 items-center justify-center rounded-lg bg-ntured/10 text-ntured ring-1 ring-ntured/15">
+                      <!-- target icon -->
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Z" stroke="currentColor" stroke-width="2"/>
+                        <path d="M12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z" stroke="currentColor" stroke-width="2"/>
+                        <path d="M12 12h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                      </svg>
+                    </span>
+                    <p class="text-sm text-slate-700">
+                      Build energy-aware routing and calibration for edge-cloud collaborative inference.
+                    </p>
+                  </div>
+
+                  <div class="flex items-start gap-3">
+                    <span class="mt-0.5 inline-flex h-8 w-8 items-center justify-center rounded-lg bg-ntublue/10 text-ntublue ring-1 ring-ntublue/15">
+                      <!-- spark icon -->
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <path d="M12 2 9 9l-7 3 7 3 3 8 3-8 7-3-7-3-3-7Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                      </svg>
+                    </span>
+                    <p class="text-sm text-slate-700">
+                      Improve reliability through fine-tuning and confidence calibration on distilled trajectories.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="lg:col-span-7">
+              <div class="rounded-xl bg-slate-50 p-4 ring-1 ring-slate-200">
+                <p class="text-sm font-semibold text-slate-900">Research interests</p>
+                <p class="mt-1 text-slate-700 leading-relaxed">
+                  Efficient multi-modal models for real-time/on-device settings; trustworthy vision-language systems with robust behavior and uncertainty
+                  calibration; and edge-cloud collaborative inference that minimizes latency/energy while keeping outputs reliable.
+                </p>
+              </div>
+            </div>
+
+            <div class="lg:col-span-5">
+              <div class="rounded-xl border border-ntublue/20 bg-ntublue/5 p-4">
+                <p class="text-sm font-semibold text-slate-900">Availability</p>
+                <p class="mt-1 text-slate-700">
+                  Actively seeking <span class="font-semibold">PhD positions for 2027</span>.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projects -->
+        <div id="projects" class="mt-8 rounded-2xl bg-white/80 p-6 shadow-soft ring-1 ring-slate-200/60 sm:p-8">
+          <div class="flex items-center gap-3">
+            <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-ntured/10 text-ntured ring-1 ring-ntured/15">
+              <!-- layers icon -->
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="m12 2 10 6-10 6L2 8l10-6Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                <path d="m2 14 10 6 10-6" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <h2 class="text-xl font-semibold tracking-tight">Selected Research &amp; Projects</h2>
+          </div>
+
+          <p class="mt-4 text-slate-700 leading-relaxed">
+            A curated selection of my most relevant work across efficient inference, robot manipulation, and scientific prediction.
+          </p>
+
+          <div class="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            <!-- Card 1 -->
+            <article class="group rounded-2xl bg-white p-5 shadow-card ring-1 ring-slate-200/70 transition hover:-translate-y-0.5 hover:shadow-soft">
+              <div class="flex items-start justify-between gap-4">
+                <div class="min-w-0">
+                  <div class="flex items-center gap-2">
+                    <span class="icon-pill icon-green" aria-hidden="true">
+                      <!-- leaf icon -->
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                        <path d="M20 4c-8 0-14 6-14 14 8 0 14-6 14-14Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                        <path d="M4 20c6-6 10-10 16-16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                      </svg>
+                    </span>
+                    <h3 class="text-base font-semibold tracking-tight">
+                      Green-Edge-Cloud
+                    </h3>
+                  </div>
+                  <p class="mt-3 text-sm text-slate-700 leading-relaxed">
+                    An adaptive edge-cloud collaborative inference framework that dynamically routes queries between a lightweight edge Student model
+                    (<span class="font-medium">Qwen-1.5B</span>) and a cloud Teacher model (<span class="font-medium">Qwen-72B</span>)
+                    using training-free, zero-shot confidence scores.
+                  </p>
+
+                  <div class="mt-4 rounded-xl bg-slate-50 p-4 ring-1 ring-slate-200/70">
+                    <p class="text-sm font-semibold text-slate-900">Key contributions</p>
+                    <ul class="mt-2 list-disc pl-5 text-sm text-slate-700 space-y-1">
+                      <li>
+                        Training-free adaptive routing via zero-shot confidence scores (reduces unnecessary cloud calls).
+                      </li>
+                      <li>
+                        LoRA-based SFT on distilled CoT trajectories to improve logical reasoning and calibrate confidence distributions.
+                      </li>
+                      <li>
+                        Real energy measurement with CodeCarbon, enabling a strong Pareto trade-off (81.16% energy reduction, 5.6x speedup).
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span class="badge badge-accent2">81.16% energy reduction</span>
+                <span class="badge badge-accent">5.6x speedup</span>
+              </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="group rounded-2xl bg-white p-5 shadow-card ring-1 ring-slate-200/70 transition hover:-translate-y-0.5 hover:shadow-soft">
+              <div class="flex items-start justify-between gap-4">
+                <div class="min-w-0">
+                  <div class="flex items-center gap-2">
+                    <span class="icon-pill icon-blue" aria-hidden="true">
+                      <!-- robot icon -->
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 2v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M8 7h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M7 8h10a4 4 0 0 1 4 4v4a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4v-4a4 4 0 0 1 4-4Z" stroke="currentColor" stroke-width="2" />
+                        <path d="M9 14h.01M15 14h.01" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                      </svg>
+                    </span>
+                    <h3 class="text-base font-semibold tracking-tight">Vision-Based Robot Manipulation</h3>
+                  </div>
+                  <p class="mt-3 text-sm text-slate-700 leading-relaxed">
+                    A 6-DOF teleoperation system integrating Action Chunking Transformer (ACT) and Conditional VAE (CVAE)
+                    to mitigate compounding errors, plus YOLOv5 for dynamic object segmentation.
+                  </p>
+                </div>
+              </div>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span class="badge badge-muted">ACT / CVAE</span>
+                <span class="badge badge-muted">YOLOv5</span>
+              </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="group rounded-2xl bg-white p-5 shadow-card ring-1 ring-slate-200/70 transition hover:-translate-y-0.5 hover:shadow-soft">
+              <div class="flex items-start justify-between gap-4">
+                <div class="min-w-0">
+                  <div class="flex items-center gap-2">
+                    <span class="icon-pill icon-red" aria-hidden="true">
+                      <!-- microscope icon -->
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                        <path d="M6 18h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M10 14 6 10l2-2 4 4" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                        <path d="M14 10l4-4 2 2-4 4" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                        <path d="M13 11a4 4 0 0 0-2-2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                      </svg>
+                    </span>
+                    <h3 class="text-base font-semibold tracking-tight">Coal Ash Prediction</h3>
+                  </div>
+                  <p class="mt-3 text-sm text-slate-700 leading-relaxed">
+                    Developed PSO-ELM to predict coal ash composition from Near-Infrared (NIR) spectral data and published as First Author in
+                    <span class="font-medium">Control Engineering of China</span>.
+                  </p>
+                </div>
+              </div>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span class="badge badge-accent">PSO-ELM</span>
+                <span class="badge badge-accent badge-accent2">First-author publication</span>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Updates -->
+        <div id="updates" class="mt-8 rounded-2xl bg-white/80 p-6 shadow-soft ring-1 ring-slate-200/60 sm:p-8">
+          <div class="flex items-center gap-3">
+            <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-ntublue/10 text-ntublue ring-1 ring-ntublue/15">
+              <!-- news icon -->
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M4 6h16v12H4z" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+                <path d="M8 10h4" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                <path d="M8 14h8" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </span>
+            <h2 class="text-xl font-semibold tracking-tight">Latest News</h2>
+          </div>
+
+          <div class="mt-5 space-y-3">
+            <div class="award-tile">
+              <p class="award-title">Green-Edge-Cloud</p>
+              <p class="award-meta">
+                Manuscript in preparation (targeting ICML 2026 Workshop).
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Awards -->
+        <div id="awards" class="mt-8 rounded-2xl bg-white/80 p-6 shadow-soft ring-1 ring-slate-200/60 sm:p-8">
+          <div class="flex items-center gap-3">
+            <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-slate-900/5 text-slate-900 ring-1 ring-slate-200/70">
+              <!-- trophy icon -->
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M8 21h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M12 17v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M7 4h10v5a5 5 0 0 1-10 0V4Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M5 6H3v2a4 4 0 0 0 4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M19 6h2v2a4 4 0 0 1-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </span>
+            <h2 class="text-xl font-semibold tracking-tight">Honors &amp; Awards</h2>
+          </div>
+
+          <div class="mt-5 grid gap-4 sm:grid-cols-2">
+            <div class="award-tile">
+              <p class="award-title">EEE Global Merit Award</p>
+              <p class="award-meta">Nanyang Technological University</p>
+            </div>
+            <div class="award-tile">
+              <p class="award-title">National Silver Award</p>
+              <p class="award-meta">“Internet+” Competition (Top 1% nationwide)</p>
+            </div>
+            <div class="award-tile sm:col-span-2">
+              <p class="award-title">University Academic Scholarships</p>
+              <p class="award-meta">Northeastern University (2021-2022, 2024-2025)</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skills -->
+        <div id="skills" class="mt-8 rounded-2xl bg-white/80 p-6 shadow-soft ring-1 ring-slate-200/60 sm:p-8">
+          <div class="flex items-center gap-3">
+            <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-ntured/10 text-ntured ring-1 ring-ntured/15">
+              <!-- code icon -->
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="m8 9-3 3 3 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="m16 9 3 3-3 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M14 4 10 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </span>
+            <h2 class="text-xl font-semibold tracking-tight">Skills</h2>
+          </div>
+
+          <div class="mt-6 grid gap-4 lg:grid-cols-3">
+            <div class="skill-card">
+              <p class="skill-title">Programming</p>
+              <div class="mt-2 flex flex-wrap gap-2">
+                <span class="skill-pill">Python</span>
+                <span class="skill-pill">C++</span>
+                <span class="skill-pill">LaTeX</span>
+              </div>
+            </div>
+
+            <div class="skill-card">
+              <p class="skill-title">AI / LLM</p>
+              <div class="mt-2 flex flex-wrap gap-2">
+                <span class="skill-pill">PyTorch</span>
+                <span class="skill-pill">Hugging Face</span>
+                <span class="skill-pill">LoRA</span>
+              </div>
+            </div>
+
+            <div class="skill-card">
+              <p class="skill-title">Robotics</p>
+              <div class="mt-2 flex flex-wrap gap-2">
+                <span class="skill-pill">ROS</span>
+                <span class="skill-pill">Gazebo</span>
+                <span class="skill-pill">YOLO</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact -->
+        <div id="contact" class="mt-8 rounded-2xl bg-white/80 p-6 shadow-soft ring-1 ring-slate-200/60 sm:p-8">
+          <div class="flex items-center gap-3">
+            <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-ntublue/10 text-ntublue ring-1 ring-ntublue/15">
+              <!-- mail icon -->
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M4 4h16v16H4V4Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                <path d="m4 6 8 7 8-7" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <h2 class="text-xl font-semibold tracking-tight">Contact</h2>
+          </div>
+
+          <div class="mt-5 grid gap-4 grid-cols-1 sm:grid-cols-3">
+            <div class="contact-tile">
+              <p class="contact-label">Email</p>
+              <div class="contact-value">
+                <a class="contact-link" href="mailto:yunzhe003@e.ntu.edu.sg">yunzhe003@e.ntu.edu.sg</a>
+              </div>
+            </div>
+
+            <div class="contact-tile">
+              <p class="contact-label">Links</p>
+              <div class="contact-value text-slate-700">
+                GitHub: <a class="contact-link" href="https://yunzhegao.github.io" target="_blank" rel="noreferrer noopener">yunzhegao.github.io</a>
+              </div>
+            </div>
+
+            <div class="contact-tile">
+              <p class="contact-label">Curriculum Vitae</p>
+              <div class="contact-value">
+                <button
+                  type="button"
+                  class="contact-link button-like bg-transparent border-none p-0 cursor-pointer"
+                  onclick="openCvPreview()"
+                >
+                  Preview My CV
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CV Preview Modal -->
+        <div
+          id="cv-modal"
+          class="fixed inset-0 z-50 hidden"
+          role="dialog"
+          aria-modal="true"
+          aria-hidden="true"
+        >
+          <div class="absolute inset-0 bg-slate-900/60" onclick="closeCvPreview()" aria-hidden="true"></div>
+          <div class="relative mx-auto mt-10 h-[80vh] w-[95vw] max-w-4xl overflow-hidden rounded-2xl bg-white shadow-xl ring-1 ring-slate-200">
+            <div class="flex items-center justify-between border-b border-slate-200 px-4 py-3">
+              <p class="text-sm font-semibold text-slate-900">CV Preview</p>
+              <button
+                type="button"
+                class="rounded-md border border-slate-200 bg-white px-3 py-1 text-sm font-semibold text-slate-800 hover:bg-slate-50"
+                onclick="closeCvPreview()"
+              >
+                Close
+              </button>
+            </div>
+            <iframe
+              src="./CV_Yunzhe_Gao_NTU.pdf"
+              class="h-full w-full"
+              title="Gao Yunzhe CV PDF Preview"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="py-10">
+      <div class="mx-auto max-w-5xl px-4 text-sm text-slate-500">
+        <div class="h-px w-full bg-slate-200/70"></div>
+        <p class="mt-4">
+          © <span id="year"></span> Gao Yunzhe. Built with a minimalist GitHub Pages setup.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = String(new Date().getFullYear());
+
+      const cvModal = document.getElementById("cv-modal");
+      function openCvPreview() {
+        if (!cvModal) return;
+        cvModal.classList.remove("hidden");
+        cvModal.setAttribute("aria-hidden", "false");
+        document.body.style.overflow = "hidden";
+      }
+
+      function closeCvPreview() {
+        if (!cvModal) return;
+        cvModal.classList.add("hidden");
+        cvModal.setAttribute("aria-hidden", "true");
+        document.body.style.overflow = "";
+      }
+
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") closeCvPreview();
+      });
+    </script>
+  </body>
+</html>
+
