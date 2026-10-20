@@ -20,3 +20,38 @@ closeCvButton?.addEventListener("click", () => {
 cvDialog?.addEventListener("click", (event) => {
   if (event.target === cvDialog) cvDialog.close();
 });
+
+const menuToggle = document.querySelector(".menu-toggle");
+const mobileNav = menuToggle
+  ? document.getElementById(menuToggle.getAttribute("aria-controls"))
+  : null;
+
+const closeMobileNav = () => {
+  if (!menuToggle || !mobileNav) return;
+  menuToggle.setAttribute("aria-expanded", "false");
+  menuToggle.setAttribute("aria-label", menuToggle.dataset.openLabel || "Open navigation");
+  mobileNav.hidden = true;
+};
+
+menuToggle?.addEventListener("click", () => {
+  if (!mobileNav) return;
+  const willOpen = menuToggle.getAttribute("aria-expanded") !== "true";
+  menuToggle.setAttribute("aria-expanded", String(willOpen));
+  menuToggle.setAttribute(
+    "aria-label",
+    willOpen ? menuToggle.dataset.closeLabel : menuToggle.dataset.openLabel,
+  );
+  mobileNav.hidden = !willOpen;
+});
+
+mobileNav?.querySelectorAll("a").forEach((link) => {
+  link.addEventListener("click", closeMobileNav);
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") closeMobileNav();
+});
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 760) closeMobileNav();
+});

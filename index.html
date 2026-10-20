@@ -7,24 +7,27 @@
     <meta name="theme-color" content="#ffffff" />
     <title>Gao Yunzhe — Efficient AI Systems</title>
     <link rel="icon" href="./assets/favicon.svg?v=2" type="image/svg+xml" />
-    <link rel="stylesheet" href="./styles.css" />
-    <script src="./script.js" defer></script>
+    <link rel="preload" href="./assets/fonts/SourceHanSansSC-Subset.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="./styles.css?v=20261020-6" />
+    <script src="./script.js?v=20261020-3" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header"><div class="header-inner">
-      <a class="wordmark" href="#top" aria-label="Gao Yunzhe, home">Gao Yunzhe</a>
+      <a class="wordmark" href="#top" aria-label="Gao Yunzhe, home"><span lang="zh-CN">高蕴喆</span> Gao Yunzhe</a>
       <nav class="site-nav" aria-label="Primary navigation"><a href="#research">Research</a><a href="#output">Output</a><a href="#profile">Profile</a><a href="#contact">Contact</a></nav>
-      <div class="header-actions"><button class="header-cv button-reset" type="button" data-open-cv>CV</button><a class="language-link" href="./cn.html" lang="zh-CN">中文</a></div>
-    </div></header>
+      <div class="header-actions"><button class="header-cv button-reset" type="button" data-open-cv>CV</button><a class="language-link" href="./cn.html" lang="zh-CN">中文</a><button class="menu-toggle button-reset" type="button" aria-expanded="false" aria-controls="mobile-nav-en" aria-label="Open navigation" data-open-label="Open navigation" data-close-label="Close navigation"><span></span><span></span><span></span></button></div>
+    </div><nav class="mobile-nav" id="mobile-nav-en" aria-label="Mobile navigation" hidden><a href="#research">Research</a><a href="#output">Output</a><a href="#profile">Profile</a><a href="#contact">Contact</a></nav></header>
 
     <main id="main">
       <section class="hero" id="top" aria-labelledby="hero-title"><div class="shell hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow"><span class="live-dot" aria-hidden="true"></span> AI systems researcher · NTU Singapore</p>
-          <h1 id="hero-title">Efficient AI, from edge to cloud.</h1>
-          <p class="hero-intro">I'm Gao Yunzhe. I build systems that decide what belongs on-device, what needs the cloud, and how to make both work reliably in the real world.</p>
-          <div class="button-row"><a class="button button-blue" href="#research">Explore the research</a><button class="button button-quiet" type="button" data-open-cv>View CV</button></div>
+          <p class="eyebrow"><span class="live-dot" aria-hidden="true"></span> AI systems researcher • NTU Singapore</p>
+          <h1 class="hero-name" id="hero-title">Gao Yunzhe</h1>
+          <p class="hero-name-cn" lang="zh-CN">高蕴喆</p>
+          <p class="hero-tagline">Efficient AI, from edge to cloud.</p>
+          <p class="hero-intro">I build systems that decide what belongs on-device, what needs the cloud, and how to make both work reliably in the real world.</p>
+          <div class="button-row"><a class="button button-blue" href="#research">Explore Research</a><button class="button button-quiet" type="button" data-open-cv>View CV</button></div>
           <p class="availability">Seeking PhD opportunities for 2027 · Singapore, GMT+8</p>
         </div>
       </div></section>
@@ -32,39 +35,41 @@
       <section class="overview section-pad" id="research" aria-labelledby="research-title"><div class="shell">
         <header class="section-header"><div><p class="eyebrow">Research portfolio</p><h2 id="research-title">Four systems. One question.</h2></div><p>How can an intelligent system do more with less computation—without becoming less dependable?</p></header>
         <nav class="research-lineup" aria-label="Explore research projects">
-          <a class="lineup-item" href="#green-edge"><span class="lineup-image"><img src="./assets/images/edge-tradeoff.png" alt="Edge-cloud accuracy and computation trade-off chart" /></span><span class="lineup-index">01 · 2025—Present</span><strong>Green-Edge-Cloud</strong><span>Efficient LLM inference</span></a>
-          <a class="lineup-item" href="#robotics"><span class="lineup-image"><img src="./assets/images/robot-insertion-002.jpg" alt="Robot aligning a plug with a socket" /></span><span class="lineup-index">02 · 2024—25</span><strong>Robot Manipulation</strong><span>Imitation learning</span></a>
-          <a class="lineup-item" href="#applied-ai"><span class="lineup-image"><img src="./assets/images/coal-results.png" alt="Coal ash prediction result plots" /></span><span class="lineup-index">03 · 2024</span><strong>Coal Ash Prediction</strong><span>Scientific machine learning</span></a>
+          <a class="lineup-item" href="#green-edge"><span class="lineup-image"><img src="./assets/images/edge-tradeoff.png" alt="Edge-cloud accuracy and computation trade-off chart" loading="lazy" decoding="async" /></span><span class="lineup-index">01 · 2025—Present</span><strong>Green-Edge-Cloud</strong><span>Efficient LLM inference</span></a>
+          <a class="lineup-item" href="#robotics"><span class="lineup-image"><img src="./assets/images/robot-insertion-002.jpg" alt="Robot aligning a plug with a socket" loading="lazy" decoding="async" /></span><span class="lineup-index">02 · 2024—25</span><strong>Robot Manipulation</strong><span>Imitation learning</span></a>
+          <a class="lineup-item" href="#applied-ai"><span class="lineup-image"><img src="./assets/images/coal-results.png" alt="Coal ash prediction result plots" loading="lazy" decoding="async" /></span><span class="lineup-index">03 · 2024</span><strong>Coal Ash Prediction</strong><span>Scientific machine learning</span></a>
           <a class="lineup-item" href="#applied-ai"><span class="lineup-image geometry" aria-hidden="true"><i></i><i></i><i></i></span><span class="lineup-index">04 · 2023</span><strong>Digital Twin System</strong><span>Industrial decision support</span></a>
         </nav>
       </div></section>
 
       <section class="feature-dark section-pad" id="green-edge" aria-labelledby="green-title"><div class="shell">
-        <header class="feature-heading"><p class="eyebrow">Featured research · NTU · 2025—Present</p><h2 id="green-title">Route without a router.</h2><p>Green-Edge-Cloud lets the edge model decide when it is confident enough to answer locally—and when a query deserves cloud-scale reasoning.</p></header>
+        <header class="feature-heading"><p class="eyebrow">Featured research · NTU · 2025—Present</p><h2 id="green-title">Route without a router.</h2><p>Confidence-calibrated edge–cloud inference for energy-efficient LLM reasoning.</p></header>
         <div class="feature-grid">
-          <div class="feature-copy"><p class="feature-lead">The framework uses the edge model's length-normalized sequence likelihood as an intrinsic confidence signal, removing the cost and complexity of a separate routing model.</p>
-            <ul class="detail-list"><li><span>01</span><p>Distilled routing-oriented chain-of-thought from Qwen2.5-72B-Instruct into Qwen2.5-1.5B-Instruct.</p></li><li><span>02</span><p>Built vLLM and CodeCarbon profiling, including edge idle energy during cloud offloading.</p></li><li><span>03</span><p>Accepted at the ICML 2026 Workshop on Efficient and Intelligent Machine Learning.</p></li></ul>
-            <div class="metric-pair"><p><strong>81.16%</strong><span>energy reduction</span></p><p><strong>5.6×</strong><span>inference speedup</span></p></div>
+          <div class="feature-copy"><p class="feature-lead">Green-Edge-Cloud enables a 1.5B edge model to route queries using its own confidence estimates. Routing-oriented chain-of-thought distillation improves confidence ranking, allowing uncertain queries to be offloaded to a 72B cloud model without a separate routing network.</p>
+            <ul class="detail-list"><li><span>01</span><p>Developed routing-oriented CoT distillation using Qwen2.5-72B-Instruct and Qwen2.5-1.5B-Instruct.</p></li><li><span>02</span><p>Evaluated confidence-based routing with vLLM and CodeCarbon, including edge idle energy during cloud offloading.</p></li><li><span>03</span><p>Extended the study with independent calibration, multi-seed evaluations, routing baselines, and quantization experiments.</p></li><li><span>04</span><p>Accepted at EIML@ICML 2026, the 2nd Workshop on Epistemic Intelligence in Machine Learning.</p></li></ul>
+            <div class="metric-pair"><p class="metric-improvement"><strong>70.5% <i aria-hidden="true">→</i> 79.8%</strong><span>GSM8K hybrid accuracy</span><small>Vanilla vs. distilled student<br />at 15.2% cloud offloading</small></p><p><strong>15.2%</strong><span>cloud offloading</span><small>GSM8K operating point</small></p><p><strong>83%</strong><span>energy reduction</span><small>vs. cloud-only</small></p><p><strong>5.6×</strong><span>inference speedup</span><small>vs. cloud-only*</small></p></div>
+            <p class="metric-footnote">* Extended evaluation; the workshop paper does not report this speed metric.</p>
           </div>
           <div class="feature-media">
-            <figure class="concept-figure edge-concept"><img src="./assets/images/hero-edge-cloud.png" alt="Concept image of an edge computer connected to cloud infrastructure; image generated by AI" /><figcaption><span class="ai-label">Image generated by AI</span> Concept visualization of edge–cloud collaboration</figcaption></figure>
-            <figure class="feature-figure"><div class="figure-frame"><img src="./assets/images/edge-tradeoff.png" alt="Computation cost versus accuracy for edge-cloud routing strategies" /></div><figcaption><span>Figure 01</span> Computation cost vs. accuracy trade-off from the Green-Edge-Cloud paper.</figcaption></figure>
+            <figure class="concept-figure edge-concept architecture-figure"><img src="./assets/images/edge-cloud-architecture.svg" alt="Green-Edge-Cloud architecture showing offline chain-of-thought distillation and confidence-thresholded online routing" loading="lazy" decoding="async" /><figcaption>System architecture · Offline CoT distillation and confidence-based online routing</figcaption></figure>
+            <figure class="feature-figure"><div class="figure-frame"><img src="./assets/images/edge-tradeoff.png" alt="Accuracy and cloud-offloading trade-off for edge-cloud routing strategies on GSM8K" loading="lazy" decoding="async" /></div><figcaption><strong>Figure 1.</strong> Accuracy–offloading trade-off on GSM8K. Results from EIML@ICML 2026.</figcaption></figure>
+            <a class="paper-link" href="./assets/papers/green-edge-cloud.pdf" target="_blank" rel="noreferrer">View paper PDF · English</a>
           </div>
         </div>
       </div></section>
 
       <section class="robotics section-pad" id="robotics" aria-labelledby="robotics-title"><div class="shell">
         <header class="section-header section-header-wide"><div><p class="eyebrow">Fine-grained robot manipulation · NEU · 2024—25</p><h2 id="robotics-title">From demonstration to 60 Hz control.</h2></div><p>I built a complete Koch v1.1 leader-follower stack: motor calibration, demonstration collection, ACT policy training, vision, and real-time deployment.</p></header>
-        <figure class="concept-figure robot-concept"><img src="./assets/images/robotics-lab.png" alt="Concept image of a robotic arm performing a precise manipulation task; image generated by AI" /><figcaption><span class="ai-label">Image generated by AI</span> Concept visualization of vision-based, fine-grained manipulation</figcaption></figure>
+        <figure class="concept-figure robot-concept"><img src="./assets/images/robotics-lab.jpg" alt="Concept image of a robotic arm performing a precise manipulation task; image generated by AI" loading="lazy" decoding="async" /><figcaption><span class="ai-label">Image generated by AI</span> Concept visualization of vision-based, fine-grained manipulation</figcaption></figure>
         <div class="robot-summary"><p class="robot-lead">Two tasks tested the system where perception and control have to agree in milliseconds: inserting a plug and sorting objects on a conveyor.</p><div class="robot-facts"><p><strong>86%</strong><span>plug grasp success</span></p><p><strong>66%</strong><span>insertion success</span></p><p><strong>89.3%</strong><span>sorting success</span></p><p><strong>14–15 ms</strong><span>YOLOv5 latency</span></p></div></div>
-        <div class="sequence" aria-label="Plug insertion experiment sequence"><figure><img src="./assets/images/robot-insertion-000.jpg" alt="Robot approaching the plug" /><figcaption><span>01</span> Approach</figcaption></figure><figure><img src="./assets/images/robot-insertion-001.jpg" alt="Robot grasping the plug" /><figcaption><span>02</span> Grasp</figcaption></figure><figure><img src="./assets/images/robot-insertion-002.jpg" alt="Robot aligning the plug" /><figcaption><span>03</span> Align</figcaption></figure><figure><img src="./assets/images/robot-insertion-003.jpg" alt="Robot completing insertion" /><figcaption><span>04</span> Insert</figcaption></figure></div>
-        <p class="implementation-note">MobileNetV2 reduced plug-task latency from 20 ms to 16 ms and enabled a 60 Hz control loop. YOLOv5 segmentation supported asynchronous conveyor sorting.</p>
+        <div class="sequence" aria-label="Plug insertion experiment sequence"><figure><img src="./assets/images/robot-insertion-000.jpg" alt="Robot approaching the plug" loading="lazy" decoding="async" /><figcaption><span>01</span> Approach</figcaption></figure><figure><img src="./assets/images/robot-insertion-001.jpg" alt="Robot grasping the plug" loading="lazy" decoding="async" /><figcaption><span>02</span> Grasp</figcaption></figure><figure><img src="./assets/images/robot-insertion-002.jpg" alt="Robot aligning the plug" loading="lazy" decoding="async" /><figcaption><span>03</span> Align</figcaption></figure><figure><img src="./assets/images/robot-insertion-003.jpg" alt="Robot completing insertion" loading="lazy" decoding="async" /><figcaption><span>04</span> Insert</figcaption></figure></div>
+        <div class="implementation-row"><p class="implementation-note">MobileNetV2 reduced plug-task latency from 20 ms to 16 ms and enabled a 60 Hz control loop. YOLOv5 segmentation supported asynchronous conveyor sorting.</p><a class="paper-link" href="./assets/papers/robot-manipulation-imitation-learning.pdf" target="_blank" rel="noreferrer">View research paper PDF · Chinese</a></div>
       </div></section>
 
       <section class="applied section-pad" id="applied-ai" aria-labelledby="applied-title"><div class="shell">
         <header class="section-header"><div><p class="eyebrow">Applied intelligence</p><h2 id="applied-title">Models grounded in physical systems.</h2></div><p>Earlier projects connect spectral sensing, industrial process data, and machine learning to decisions operators can use.</p></header>
         <div class="applied-grid">
-          <article class="application-card application-card-figure"><div class="card-copy"><p class="eyebrow">Scientific ML · 2024</p><h3>Coal ash prediction</h3><p>Near-infrared spectroscopy with PSO-ELM predicted coal ash composition with <strong>R² = 0.98</strong> and <strong>RMSE = 0.79</strong>. Published with me as first author.</p></div><figure><img src="./assets/images/coal-results.png" alt="Regression and prediction comparison plots for coal ash composition" /><figcaption>Prediction and regression results</figcaption></figure></article>
+          <article class="application-card application-card-figure"><div class="card-copy"><p class="eyebrow">Scientific ML · 2024</p><h3>Coal ash prediction</h3><p>Near-infrared spectroscopy with PSO-ELM predicted coal ash composition with <strong>R² = 0.98</strong> and <strong>RMSE = 0.79</strong>. Published with me as first author.</p></div><figure><img src="./assets/images/coal-results.png" alt="Regression and prediction comparison plots for coal ash composition" loading="lazy" decoding="async" /><figcaption>Prediction and regression results</figcaption></figure></article>
           <article class="application-card application-card-blue"><div class="card-copy"><p class="eyebrow">Digital twin · 2023</p><h3>Industrial decisions from historical patterns.</h3><p>ECAS matches mineral-processing equipment states against historical abnormal operating patterns using correlation-based retrieval.</p></div><div class="digital-twin-visual" aria-hidden="true"><span>Equipment state</span><i></i><span>Pattern retrieval</span><i></i><span>Operator insight</span></div><p class="card-foot">Chinese software copyright · National silver award · NEU grand prize</p></article>
         </div>
       </div></section>
@@ -72,7 +77,7 @@
       <section class="output section-pad" id="output" aria-labelledby="output-title"><div class="shell">
         <header class="section-header"><div><p class="eyebrow">Research output</p><h2 id="output-title">Published, protected, recognized.</h2></div><p>Peer-reviewed work, software intellectual property, and awards from systems research and applied innovation.</p></header>
         <div class="output-layout"><h3>Publications</h3><div class="record-list">
-          <article class="record"><p class="record-year">2026</p><div><p class="record-status">Accepted · ICML 2026 Workshop (EIML)</p><h4>Green-Edge-Cloud: Routing without Routers via Confidence Calibration</h4><p><strong>Y. Gao</strong>, Z. Feng, K. Mao</p></div></article>
+          <article class="record"><p class="record-year">2026</p><div><p class="record-status">Accepted · ICML 2026 Workshop (EIML)</p><h4>Green-Edge-Cloud: Routing without Routers via Confidence Calibration</h4><p><strong>Y. Gao</strong>, Z. Feng, K. Mao</p><a class="paper-link" href="./assets/papers/green-edge-cloud.pdf" target="_blank" rel="noreferrer">View paper PDF · English</a></div></article>
           <article class="record"><p class="record-year">2024</p><div><p class="record-status">Core Journal · Control Engineering of China</p><h4>Prediction of Coal Ash Composition Based on Near-Infrared Visible Spectroscopy and PSO-ELM</h4><p><strong>Y. Gao</strong>, J. Zou, D. Xiao</p></div></article>
         </div><h3>Intellectual property</h3><div class="record-list">
           <article class="record"><p class="record-year">2023</p><div><p class="record-status">Chinese computer software copyright · 2023SR1469715</p><h4>Mineral Processing Equipment Abnormal Pattern Retrieval and Index Correlation Analysis System (ECAS) V1.0</h4><p>K. Zhang, <strong>Y. Gao</strong> (2nd author)</p></div></article>
@@ -83,8 +88,8 @@
       <section class="profile section-pad" id="profile" aria-labelledby="profile-title"><div class="shell">
         <header class="profile-intro"><p class="eyebrow">Profile</p><h2 id="profile-title">Engineering useful intelligence, from model to machine.</h2><p>My work centers on lightweight model deployment, efficient multimodal AI, and reliable edge-cloud collaboration. My M.Sc. dissertation is on the design and deployment of lightweight large language models for efficient, localized inference.</p></header>
         <div class="education-block"><h3>Education</h3><div class="education-list">
-          <article><p class="education-date">2025—26</p><div><h4>Nanyang Technological University</h4><p>M.Sc. in Computer Control and Automation</p></div><div class="education-meta"><p>Singapore</p><p>GPA 4.63 / 5.0</p><p>Advisor: Prof. Mao Kezhi</p></div></article>
-          <article><p class="education-date">2021—25</p><div><h4>Northeastern University</h4><p>B.E. in Automation</p></div><div class="education-meta"><p>Shenyang, China</p><p>GPA 3.76 / 5.0</p><p>Average 87.6 / 100</p></div></article>
+          <article><img class="school-watermark school-watermark-ntu" src="./assets/images/ntu-logo.png" alt="" aria-hidden="true" loading="lazy" decoding="async" /><p class="education-date">2025—26</p><div><h4>Nanyang Technological University</h4><p>M.Sc. in Computer Control and Automation</p></div><div class="education-meta"><p>Singapore</p><p>GPA 4.63 / 5.0</p><p>Advisor: Prof. Mao Kezhi</p></div></article>
+          <article><span class="school-watermark school-watermark-neu" aria-hidden="true"><img src="./assets/images/neu-wordmark.png" alt="" loading="lazy" decoding="async" /><img src="./assets/images/neu-logo.png" alt="" loading="lazy" decoding="async" /></span><p class="education-date">2021—25</p><div><h4>Northeastern University</h4><p>B.E. in Automation</p></div><div class="education-meta"><p>Shenyang, China</p><p>GPA 3.76 / 5.0</p><p>Average 87.6 / 100</p></div></article>
         </div></div>
         <div class="recognition-block"><h3>Recognition</h3><div class="award-grid"><article><p>2025—26</p><h4>EEE Global Merit Award</h4><span>NTU · Top 2%</span></article><article><p>2023</p><h4>National Silver Award</h4><span>Innovation Competition · Top 1%</span></article><article><p>2024—25</p><h4>University Academic Scholarship</h4><span>Northeastern University</span></article><article><p>2021—22</p><h4>University Academic Scholarship</h4><span>Northeastern University</span></article></div></div>
       </div></section>
@@ -93,10 +98,10 @@
         <article><h3>Programming</h3><p>Python, C/C++, MATLAB, SQL, LaTeX</p></article><article><h3>Machine Learning &amp; LLMs</h3><p>PyTorch, Transformers, Hugging Face, PEFT / LoRA, TRL, scikit-learn, CoT distillation, confidence-based routing</p></article><article><h3>Robotics &amp; Vision</h3><p>Imitation learning, ACT, ROS, MobileNetV2, YOLOv5, MuJoCo, Gazebo</p></article><article><h3>Inference &amp; Systems</h3><p>vLLM, quantized inference, edge-cloud inference, CodeCarbon, energy and latency profiling, Linux, Docker, CUDA, Git</p></article>
       </div></div></section>
 
-      <section class="contact section-pad" id="contact" aria-labelledby="contact-title"><div class="shell contact-grid"><div><p class="eyebrow">Open to PhD research opportunities for 2027</p><h2 id="contact-title">If efficient AI systems are on your roadmap, let's talk.</h2></div><div class="contact-links"><a class="button button-white" href="mailto:yunzhe003@e.ntu.edu.sg">yunzhe003@e.ntu.edu.sg</a><button class="contact-text button-reset" type="button" data-open-cv>Preview CV</button><a class="contact-text" href="https://yunzhegao.github.io" target="_blank" rel="noreferrer noopener">yunzhegao.github.io</a></div></div></section>
+      <section class="contact section-pad" id="contact" aria-labelledby="contact-title"><div class="shell contact-grid"><div><p class="eyebrow">Open to PhD research opportunities for 2027</p><h2 id="contact-title">If efficient AI systems are on your roadmap, let's talk.</h2></div><div class="contact-links"><a class="button button-white" href="mailto:yunzhe003@e.ntu.edu.sg">yunzhe003@e.ntu.edu.sg</a><button class="button button-quiet" type="button" data-open-cv>Preview CV</button></div></div></section>
     </main>
 
-    <footer class="site-footer"><div class="shell footer-grid"><p>© <span data-current-year></span> Gao Yunzhe</p><p>Singapore · GMT+8</p><p>Updated 20 Oct 2026</p><a href="#top">Back to top</a></div></footer>
-    <dialog class="cv-dialog" data-cv-dialog aria-labelledby="cv-dialog-title"><div class="dialog-header"><p id="cv-dialog-title"><strong>Curriculum Vitae</strong> · PDF</p><button class="dialog-close" type="button" data-close-cv>Close ×</button></div><iframe src="./CV_Gao_Yunzhe_NTU.pdf" title="Gao Yunzhe curriculum vitae"></iframe><a class="dialog-download" href="./CV_Gao_Yunzhe_NTU.pdf" download>Download PDF</a></dialog>
+    <footer class="site-footer"><div class="shell footer-grid"><p>© <span data-current-year></span> Gao Yunzhe</p><p>Singapore · GMT+8</p><p>Updated 20 Oct 2026</p><p class="footer-gpt">Built after one too many late-night talks with GPT</p><a href="#top">Back to top</a></div></footer>
+    <dialog class="cv-dialog" data-cv-dialog aria-labelledby="cv-dialog-title"><div class="dialog-header"><p id="cv-dialog-title"><strong>Curriculum Vitae</strong> · PDF</p><button class="dialog-close" type="button" data-close-cv>Close ×</button></div><iframe src="./CV_Gao_Yunzhe_NTU.pdf" title="Gao Yunzhe curriculum vitae" loading="lazy"></iframe><a class="dialog-download" href="./CV_Gao_Yunzhe_NTU.pdf" download>Download PDF</a></dialog>
   </body>
 </html>
