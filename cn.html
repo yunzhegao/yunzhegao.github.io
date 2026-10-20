@@ -1,493 +1,80 @@
 <!doctype html>
-<html lang="zh-CN" class="h-full">
+<html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="高蕴喆（Yunzhe Gao）个人学术主页：高效且可信的多模态AI。" />
-    <title>高蕴喆 — 学术主页</title>
-
-    <!-- Tailwind (CDN) -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              ntured: "#cc0000",
-              ntublue: "#005DAA",
-              slatebg: "#f6f7fb"
-            },
-            boxShadow: {
-              soft: "0 10px 30px rgba(16,24,40,0.08)",
-              card: "0 8px 22px rgba(16,24,40,0.08)"
-            }
-          }
-        }
-      };
-    </script>
-
+    <meta name="description" content="高蕴喆的个人学术主页：高效可信 AI 系统、边云协同推理、机器人与机器学习。" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>高蕴喆 — 高效 AI 系统</title>
+    <link rel="icon" href="./assets/favicon.svg?v=2" type="image/svg+xml" />
     <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
   </head>
+  <body>
+    <a class="skip-link" href="#main">跳至主要内容</a>
+    <header class="site-header"><div class="header-inner">
+      <a class="wordmark" href="#top" aria-label="高蕴喆，主页">高蕴喆</a>
+      <nav class="site-nav" aria-label="主要导航"><a href="#research">研究</a><a href="#output">成果</a><a href="#profile">简介</a><a href="#contact">联系</a></nav>
+      <div class="header-actions"><button class="header-cv button-reset" type="button" data-open-cv>简历</button><a class="language-link" href="./index.html" lang="en">EN</a></div>
+    </div></header>
 
-  <body class="h-full bg-slatebg text-slate-900 antialiased">
-    <a
-      href="#main"
-      class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-50 focus:rounded-md focus:bg-white focus:px-4 focus:py-2 focus:shadow"
-    >
-      跳转到主要内容
-    </a>
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title"><div class="shell hero-grid">
+        <div class="hero-copy"><p class="eyebrow"><span class="live-dot" aria-hidden="true"></span> AI 系统研究者 · 新加坡南洋理工大学</p><h1 id="hero-title">高效 AI，从端侧走向云端。</h1><p class="hero-intro">我是高蕴喆。我研究哪些任务适合在端侧完成、哪些需要云端模型，以及如何让两者在真实系统中可靠协同。</p><div class="button-row"><a class="button button-blue" href="#research">查看研究</a><button class="button button-quiet" type="button" data-open-cv>查看简历</button></div><p class="availability">正在寻求 2027 年博士研究机会 · 新加坡 GMT+8</p></div>
+      </div></section>
 
-    <div class="pointer-events-none absolute inset-x-0 top-0 h-56 bg-gradient-to-b from-ntublue/10 via-transparent to-transparent"></div>
+      <section class="overview section-pad" id="research" aria-labelledby="research-title"><div class="shell">
+        <header class="section-header"><div><p class="eyebrow">研究项目</p><h2 id="research-title">四个系统，一个问题。</h2></div><p>如何让智能系统用更少的计算完成更多工作，同时不牺牲可靠性？</p></header>
+        <nav class="research-lineup" aria-label="浏览研究项目">
+          <a class="lineup-item" href="#green-edge"><span class="lineup-image"><img src="./assets/images/edge-tradeoff.png" alt="边云推理准确率与计算成本权衡曲线" /></span><span class="lineup-index">01 · 2025—至今</span><strong>Green-Edge-Cloud</strong><span>高效大模型推理</span></a>
+          <a class="lineup-item" href="#robotics"><span class="lineup-image"><img src="./assets/images/robot-insertion-002.jpg" alt="机器人将插头与插座对齐" /></span><span class="lineup-index">02 · 2024—25</span><strong>精细机器人操作</strong><span>模仿学习</span></a>
+          <a class="lineup-item" href="#applied-ai"><span class="lineup-image"><img src="./assets/images/coal-results.png" alt="煤灰成分预测结果图" /></span><span class="lineup-index">03 · 2024</span><strong>煤灰成分预测</strong><span>科学机器学习</span></a>
+          <a class="lineup-item" href="#applied-ai"><span class="lineup-image geometry" aria-hidden="true"><i></i><i></i><i></i></span><span class="lineup-index">04 · 2023</span><strong>数字孪生决策系统</strong><span>工业智能决策</span></a>
+        </nav>
+      </div></section>
 
-    <header class="relative">
-      <div class="mx-auto max-w-5xl px-4 pt-10 pb-6">
-        <div>
-          <div class="min-w-0">
-            <h1 class="text-3xl font-semibold tracking-tight sm:text-4xl">
-              高蕴喆&nbsp;&nbsp;<span>Gao Yunzhe</span>
-            </h1>
-            <p class="mt-2 text-lg text-slate-700 md:whitespace-nowrap">
-              南洋理工大学（NTU）硕士研究生
-            </p>
-          </div>
-
-          <div class="mt-3 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-            <p class="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white/70 px-3 py-1 text-sm text-slate-700 shadow-sm">
-              <span class="inline-block h-2 w-2 rounded-full bg-ntured"></span>
-              高效 &amp; 可信多模态AI
-            </p>
-
-            <nav aria-label="Primary" class="flex flex-wrap gap-2 sm:justify-end">
-              <a class="navlink" href="#about">关于我</a>
-              <a class="navlink" href="#projects">科研与项目</a>
-              <a class="navlink" href="#awards">荣誉与奖励</a>
-              <a class="navlink" href="#skills">技能</a>
-              <a class="navlink" href="#contact">联系</a>
-              <a class="navlink" href="./index.html" aria-label="Switch to English page">EN</a>
-            </nav>
+      <section class="feature-dark section-pad" id="green-edge" aria-labelledby="green-title"><div class="shell">
+        <header class="feature-heading"><p class="eyebrow">重点研究 · NTU · 2025—至今</p><h2 id="green-title">不用额外路由器，也能完成路由。</h2><p>Green-Edge-Cloud 让端侧模型自己判断：当前问题可以本地回答，还是值得调用云端大模型。</p></header>
+        <div class="feature-grid"><div class="feature-copy"><p class="feature-lead">该框架直接把端侧模型经长度归一化的序列似然作为内在置信度信号，省去单独训练和运行路由模型的开销。</p><ul class="detail-list"><li><span>01</span><p>将 Qwen2.5-72B-Instruct 的路由导向思维链蒸馏至 Qwen2.5-1.5B-Instruct。</p></li><li><span>02</span><p>使用 vLLM 与 CodeCarbon 构建推理和能耗分析流程，并计入云端卸载期间的端侧空闲能耗。</p></li><li><span>03</span><p>论文已被 ICML 2026 高效与智能机器学习研讨会录用。</p></li></ul><div class="metric-pair"><p><strong>81.16%</strong><span>能耗降低</span></p><p><strong>5.6×</strong><span>推理加速</span></p></div></div>
+          <div class="feature-media">
+            <figure class="concept-figure edge-concept"><img src="./assets/images/hero-edge-cloud.png" alt="端侧设备连接云端基础设施的概念图；图片由 AI 生成" /><figcaption><span class="ai-label">图片由 AI 生成</span> 端云协同研究主题概念示意</figcaption></figure>
+            <figure class="feature-figure"><div class="figure-frame"><img src="./assets/images/edge-tradeoff.png" alt="不同边云路由策略的计算成本与准确率权衡曲线" /></div><figcaption><span>图 01</span> Green-Edge-Cloud 论文中的计算成本与准确率权衡。</figcaption></figure>
           </div>
         </div>
-      </div>
-    </header>
+      </div></section>
 
-    <main id="main" class="relative">
-      <section class="mx-auto max-w-5xl px-4 pb-12">
-        <!-- About -->
-        <div id="about" class="rounded-2xl bg-white/80 p-6 shadow-soft ring-1 ring-slate-200/60 sm:p-8">
-          <div class="flex items-center gap-3">
-            <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-ntublue/10 text-ntublue ring-1 ring-ntublue/15">
-              <!-- info icon -->
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Z" stroke="currentColor" stroke-width="2"/>
-                <path d="M12 16v-5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                <path d="M12 8h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-              </svg>
-            </span>
-            <h2 class="text-xl font-semibold tracking-tight">关于我</h2>
-          </div>
+      <section class="robotics section-pad" id="robotics" aria-labelledby="robotics-title"><div class="shell">
+        <header class="section-header section-header-wide"><div><p class="eyebrow">精细机器人操作 · 东北大学 · 2024—25</p><h2 id="robotics-title">从示范采集，到 60 Hz 实时控制。</h2></div><p>我搭建了完整的 Koch v1.1 主从遥操作系统，覆盖电机标定、示范采集、ACT 策略训练、视觉感知与实时部署。</p></header>
+        <figure class="concept-figure robot-concept"><img src="./assets/images/robotics-lab.png" alt="机械臂精细操作研究概念图；图片由 AI 生成" /><figcaption><span class="ai-label">图片由 AI 生成</span> 基于视觉的精细机器人操作概念示意</figcaption></figure>
+        <div class="robot-summary"><p class="robot-lead">插头插接和传送带分拣两项任务，检验感知与控制能否在毫秒级时间内稳定协同。</p><div class="robot-facts"><p><strong>86%</strong><span>插头抓取成功率</span></p><p><strong>66%</strong><span>插接成功率</span></p><p><strong>89.3%</strong><span>分拣成功率</span></p><p><strong>14–15 ms</strong><span>YOLOv5 延迟</span></p></div></div>
+        <div class="sequence" aria-label="插头插接实验序列"><figure><img src="./assets/images/robot-insertion-000.jpg" alt="机器人接近插头" /><figcaption><span>01</span> 接近</figcaption></figure><figure><img src="./assets/images/robot-insertion-001.jpg" alt="机器人抓取插头" /><figcaption><span>02</span> 抓取</figcaption></figure><figure><img src="./assets/images/robot-insertion-002.jpg" alt="机器人对齐插头" /><figcaption><span>03</span> 对齐</figcaption></figure><figure><img src="./assets/images/robot-insertion-003.jpg" alt="机器人完成插接" /><figcaption><span>04</span> 插接</figcaption></figure></div>
+        <p class="implementation-note">MobileNetV2 将插接任务延迟从 20 ms 降至 16 ms，并支持 60 Hz 控制；YOLOv5 异步分割用于传送带分拣。</p>
+      </div></section>
 
-          <div class="mt-5 grid gap-6 lg:grid-cols-12 lg:items-start">
-            <div class="lg:col-span-7">
-              <p class="text-slate-700 leading-relaxed">
-                我是南洋理工大学（NTU）的研究生，专注于高效AI系统，重点在于轻量化模型部署以及实用的边云协同推理。
-                我的研究目标是同时提升性能与可靠性，服务于真实世界应用。
-              </p>
+      <section class="applied section-pad" id="applied-ai" aria-labelledby="applied-title"><div class="shell">
+        <header class="section-header"><div><p class="eyebrow">应用智能</p><h2 id="applied-title">让模型扎根于真实物理系统。</h2></div><p>早期研究把光谱传感、工业过程数据和机器学习连接起来，转化为操作人员可以使用的决策信息。</p></header>
+        <div class="applied-grid"><article class="application-card application-card-figure"><div class="card-copy"><p class="eyebrow">科学机器学习 · 2024</p><h3>煤灰成分预测</h3><p>利用近红外可见光谱与 PSO-ELM 预测煤灰成分，达到 <strong>R² = 0.98</strong>、<strong>RMSE = 0.79</strong>，本人以第一作者发表。</p></div><figure><img src="./assets/images/coal-results.png" alt="煤灰成分回归与预测对比结果" /><figcaption>预测与回归结果</figcaption></figure></article>
+          <article class="application-card application-card-blue"><div class="card-copy"><p class="eyebrow">数字孪生 · 2023</p><h3>从历史异常模式中辅助工业决策。</h3><p>ECAS 使用基于相关性的检索方法，将选矿设备当前状态与历史异常运行模式进行匹配。</p></div><div class="digital-twin-visual" aria-hidden="true"><span>设备状态</span><i></i><span>模式检索</span><i></i><span>操作洞察</span></div><p class="card-foot">中国软件著作权 · 国家银奖 · 东北大学特等奖</p></article></div>
+      </div></section>
 
-              <div class="mt-5 space-y-3">
-                <div class="space-y-0.5">
-                  <span class="badge">M.Sc.</span>
-                  <p class="text-slate-700">
-                    南洋理工大学 计算机控制与自动化专业
-                    <br />
-                    <span class="font-medium">GPA 4.75 / 5.0</span>.
-                    <br />
-                  </p>
-                </div>
-                <div class="space-y-0.5">
-                  <span class="badge">B.E.</span>
-                  <p class="text-slate-700">
-                    东北大学（沈阳） 自动化专业
-                    <br />
-                    <span class="font-medium">GPA 3.76 / 5.0</span> (平均分：87.6 / 100).
-                    <br />
-                  </p>
-                </div>
-              </div>
-            </div>
+      <section class="output section-pad" id="output" aria-labelledby="output-title"><div class="shell">
+        <header class="section-header"><div><p class="eyebrow">研究成果</p><h2 id="output-title">论文、知识产权与认可。</h2></div><p>来自系统研究与应用创新的同行评审成果、软件知识产权和竞赛奖项。</p></header>
+        <div class="output-layout"><h3>论文</h3><div class="record-list"><article class="record"><p class="record-year">2026</p><div><p class="record-status">已录用 · ICML 2026 Workshop（EIML）</p><h4>Green-Edge-Cloud: Routing without Routers via Confidence Calibration</h4><p><strong>Y. Gao</strong>, Z. Feng, K. Mao</p></div></article><article class="record"><p class="record-year">2024</p><div><p class="record-status">核心期刊 · 《控制工程》</p><h4>基于近红外可见光谱与 PSO-ELM 的煤灰成分预测</h4><p><strong>Y. Gao</strong>, J. Zou, D. Xiao</p></div></article></div>
+          <h3>知识产权</h3><div class="record-list"><article class="record"><p class="record-year">2023</p><div><p class="record-status">中国计算机软件著作权 · 2023SR1469715</p><h4>选矿设备异常模式检索及指标相关性分析系统（ECAS）V1.0</h4><p>K. Zhang，<strong>Y. Gao</strong>（第二作者）</p></div></article><article class="record"><p class="record-year">2023</p><div><p class="record-status">中国计算机软件著作权 · 2023SR1421636</p><h4>智慧场馆资源配置及安防运行可视化分析软件（IVVAS）V1.0</h4><p>K. Zhang，P. Zhu，<strong>Y. Gao</strong>（第三作者）</p></div></article></div></div>
+      </div></section>
 
-            <div class="lg:col-span-5">
-              <div class="rounded-2xl bg-white p-5 shadow-card ring-1 ring-slate-200/70">
-                <p class="text-sm font-semibold text-slate-900">当前研究方向</p>
-                <p class="mt-2 text-slate-700 leading-relaxed">
-                  硕士论文：<span class="font-medium">轻量级大语言模型的高效本地化部署与实现</span>。
-                </p>
-                <div class="mt-4 space-y-3">
-                  <div class="flex items-start gap-3">
-                    <span class="mt-0.5 inline-flex h-8 w-8 items-center justify-center rounded-lg bg-ntured/10 text-ntured ring-1 ring-ntured/15">
-                      <!-- target icon -->
-                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                        <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Z" stroke="currentColor" stroke-width="2"/>
-                        <path d="M12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z" stroke="currentColor" stroke-width="2"/>
-                        <path d="M12 12h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                      </svg>
-                    </span>
-                    <p class="text-sm text-slate-700">
-                      面向边云协同推理的能耗感知路由与校准。
-                    </p>
-                  </div>
+      <section class="profile section-pad" id="profile" aria-labelledby="profile-title"><div class="shell">
+        <header class="profile-intro"><p class="eyebrow">个人简介</p><h2 id="profile-title">从模型到机器，构建真正可用的智能。</h2><p>我的研究聚焦轻量化模型部署、高效多模态 AI 与可靠的边云协同。硕士论文方向为轻量级大语言模型的设计，以及面向高效本地推理的部署。</p></header>
+        <div class="education-block"><h3>教育经历</h3><div class="education-list"><article><p class="education-date">2025—26</p><div><h4>南洋理工大学</h4><p>计算机控制与自动化 硕士</p></div><div class="education-meta"><p>新加坡</p><p>GPA 4.63 / 5.0</p><p>导师：毛克志教授</p></div></article><article><p class="education-date">2021—25</p><div><h4>东北大学</h4><p>自动化 学士</p></div><div class="education-meta"><p>中国沈阳</p><p>GPA 3.76 / 5.0</p><p>平均分 87.6 / 100</p></div></article></div></div>
+        <div class="recognition-block"><h3>荣誉</h3><div class="award-grid"><article><p>2025—26</p><h4>EEE Global Merit Award</h4><span>南洋理工大学 · 前 2%</span></article><article><p>2023</p><h4>国家银奖</h4><span>中国国际大学生创新大赛 · 全国前 1%</span></article><article><p>2024—25</p><h4>校级学业奖学金</h4><span>东北大学</span></article><article><p>2021—22</p><h4>校级学业奖学金</h4><span>东北大学</span></article></div></div>
+      </div></section>
 
-                  <div class="flex items-start gap-3">
-                    <span class="mt-0.5 inline-flex h-8 w-8 items-center justify-center rounded-lg bg-ntublue/10 text-ntublue ring-1 ring-ntublue/15">
-                      <!-- spark icon -->
-                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                        <path d="M12 2 9 9l-7 3 7 3 3 8 3-8 7-3-7-3-3-7Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-                      </svg>
-                    </span>
-                    <p class="text-sm text-slate-700">
-                      通过蒸馏轨迹进行微调与置信度校准，提升可靠性。
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
+      <section class="toolkit" aria-labelledby="toolkit-title"><div class="shell toolkit-grid"><div><p class="eyebrow">技能</p><h2 id="toolkit-title">覆盖完整技术栈。</h2></div><div class="tool-list"><article><h3>编程</h3><p>Python、C/C++、MATLAB、SQL、LaTeX</p></article><article><h3>机器学习与大模型</h3><p>PyTorch、Transformers、Hugging Face、PEFT / LoRA、TRL、scikit-learn、思维链蒸馏、基于置信度的路由</p></article><article><h3>机器人与视觉</h3><p>模仿学习、ACT、ROS、MobileNetV2、YOLOv5、MuJoCo、Gazebo</p></article><article><h3>推理与系统</h3><p>vLLM、量化推理、边云协同推理、CodeCarbon、能耗与延迟分析、Linux、Docker、CUDA、Git</p></article></div></div></section>
 
-            <div class="lg:col-span-7">
-              <div class="rounded-xl bg-slate-50 p-4 ring-1 ring-slate-200">
-                <p class="text-sm font-semibold text-slate-900">研究兴趣</p>
-                <p class="mt-1 text-slate-700 leading-relaxed">
-                  面向实时/端侧场景的高效多模态模型；具备鲁棒行为与不确定性校准的可信视觉-语言系统；
-                  以及在保证输出可靠性的前提下尽量降低延迟/能耗的边云协同推理。
-                </p>
-              </div>
-            </div>
-
-            <div class="lg:col-span-5">
-              <div class="rounded-xl border border-ntublue/20 bg-ntublue/5 p-4">
-                <p class="text-sm font-semibold text-slate-900">寻求机会</p>
-                <p class="mt-1 text-slate-700">
-                  正在积极寻求 <span class="font-semibold">2027 PhD</span> 机会。
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Projects -->
-        <div id="projects" class="mt-8 rounded-2xl bg-white/80 p-6 shadow-soft ring-1 ring-slate-200/60 sm:p-8">
-          <div class="flex items-center gap-3">
-            <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-ntured/10 text-ntured ring-1 ring-ntured/15">
-              <!-- layers icon -->
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <path d="m12 2 10 6-10 6L2 8l10-6Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-                <path d="m2 14 10 6 10-6" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-              </svg>
-            </span>
-            <h2 class="text-xl font-semibold tracking-tight">科研与项目</h2>
-          </div>
-
-          <p class="mt-4 text-slate-700 leading-relaxed">
-            我在高效推理、机器人操作以及科学预测方向的代表性工作汇总（精选）。
-          </p>
-
-          <div class="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            <!-- Card 1 -->
-            <article class="group rounded-2xl bg-white p-5 shadow-card ring-1 ring-slate-200/70 transition hover:-translate-y-0.5 hover:shadow-soft">
-              <div class="flex items-start justify-between gap-4">
-                <div class="min-w-0">
-                  <div class="flex items-center gap-2">
-                    <span class="icon-pill icon-green" aria-hidden="true">
-                      <!-- leaf icon -->
-                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-                        <path d="M20 4c-8 0-14 6-14 14 8 0 14-6 14-14Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-                        <path d="M4 20c6-6 10-10 16-16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                      </svg>
-                    </span>
-                    <h3 class="text-base font-semibold tracking-tight">
-                      Green-Edge-Cloud
-                    </h3>
-                  </div>
-                  <p class="mt-3 text-sm text-slate-700 leading-relaxed">
-                    一个自适应的边云协同推理框架，通过训练无关的零样本置信度评分，在轻量端侧 Student 模型
-                    (<span class="font-medium">Qwen-1.5B</span>) 与云端 Teacher 模型 (<span class="font-medium">Qwen-72B</span>) 之间动态路由查询。
-                  </p>
-
-                  <div class="mt-4 rounded-xl bg-slate-50 p-4 ring-1 ring-slate-200/70">
-                    <p class="text-sm font-semibold text-slate-900">关键贡献</p>
-                    <ul class="mt-2 list-disc pl-5 text-sm text-slate-700 space-y-1">
-                      <li>基于零样本置信度的训练无关自适应路由（减少不必要的云调用）。</li>
-                      <li>基于 LoRA 的 SFT：在蒸馏出的 CoT 轨迹上提升逻辑推理并校准置信度分布。</li>
-                      <li>使用 CodeCarbon 实现真实能耗测量，实现了强帕累托权衡（81.16% 能耗降低、5.6x 加速）。</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="mt-4 flex flex-wrap gap-2">
-                <span class="badge badge-accent2">81.16% 能耗降低</span>
-                <span class="badge badge-accent">5.6x 加速</span>
-              </div>
-            </article>
-
-            <!-- Card 2 -->
-            <article class="group rounded-2xl bg-white p-5 shadow-card ring-1 ring-slate-200/70 transition hover:-translate-y-0.5 hover:shadow-soft">
-              <div class="flex items-start justify-between gap-4">
-                <div class="min-w-0">
-                  <div class="flex items-center gap-2">
-                    <span class="icon-pill icon-blue" aria-hidden="true">
-                      <!-- robot icon -->
-                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-                        <path d="M12 2v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                        <path d="M8 7h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                        <path d="M7 8h10a4 4 0 0 1 4 4v4a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4v-4a4 4 0 0 1 4-4Z" stroke="currentColor" stroke-width="2" />
-                        <path d="M9 14h.01M15 14h.01" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
-                      </svg>
-                    </span>
-                    <h3 class="text-base font-semibold tracking-tight">基于视觉的机器人抓取与操作</h3>
-                  </div>
-                  <p class="mt-3 text-sm text-slate-700 leading-relaxed">
-                    一个 6-DOF 视觉引导遥操作系统：结合 Action Chunking Transformer（ACT）与 Conditional VAE（CVAE）
-                    缓解连续控制中的误差累积，并使用 YOLOv5 完成动态目标分割。
-                  </p>
-                </div>
-              </div>
-              <div class="mt-4 flex flex-wrap gap-2">
-                <span class="badge badge-muted">ACT / CVAE</span>
-                <span class="badge badge-muted">YOLOv5</span>
-              </div>
-            </article>
-
-            <!-- Card 3 -->
-            <article class="group rounded-2xl bg-white p-5 shadow-card ring-1 ring-slate-200/70 transition hover:-translate-y-0.5 hover:shadow-soft">
-              <div class="flex items-start justify-between gap-4">
-                <div class="min-w-0">
-                  <div class="flex items-center gap-2">
-                    <span class="icon-pill icon-red" aria-hidden="true">
-                      <!-- microscope icon -->
-                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-                        <path d="M6 18h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                        <path d="M10 14 6 10l2-2 4 4" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-                        <path d="M14 10l4-4 2 2-4 4" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-                        <path d="M13 11a4 4 0 0 0-2-2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                      </svg>
-                    </span>
-                    <h3 class="text-base font-semibold tracking-tight">煤灰成分预测</h3>
-                  </div>
-                  <p class="mt-3 text-sm text-slate-700 leading-relaxed">
-                    基于 PSO-ELM 的反演方法：利用近红外（NIR）光谱数据预测煤灰成分，并作为第一作者发表在
-                    <span class="font-medium">《Control Engineering of China》</span>。
-                  </p>
-                </div>
-              </div>
-              <div class="mt-4 flex flex-wrap gap-2">
-                <span class="badge badge-accent">PSO-ELM</span>
-                <span class="badge badge-accent badge-accent2">第一作者论文</span>
-              </div>
-            </article>
-          </div>
-        </div>
-
-        <!-- Updates -->
-        <div id="updates" class="mt-8 rounded-2xl bg-white/80 p-6 shadow-soft ring-1 ring-slate-200/60 sm:p-8">
-          <div class="flex items-center gap-3">
-            <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-ntublue/10 text-ntublue ring-1 ring-ntublue/15">
-              <!-- news icon -->
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <path d="M4 6h16v12H4z" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
-                <path d="M8 10h4" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-                <path d="M8 14h8" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-              </svg>
-            </span>
-            <h2 class="text-xl font-semibold tracking-tight">最新动态</h2>
-          </div>
-
-          <div class="mt-5 space-y-3">
-            <div class="award-tile">
-              <p class="award-title">Green-Edge-Cloud</p>
-              <p class="award-meta">
-                <strong>[2026年5月17日]</strong> 我们的研究论文已被 ICML 2026 Workshop (EIML) 正式<strong>录用 (Accepted)</strong>！
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Awards -->
-        <div id="awards" class="mt-8 rounded-2xl bg-white/80 p-6 shadow-soft ring-1 ring-slate-200/60 sm:p-8">
-          <div class="flex items-center gap-3">
-            <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-slate-900/5 text-slate-900 ring-1 ring-slate-200/70">
-              <!-- trophy icon -->
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <path d="M8 21h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                <path d="M12 17v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                <path d="M7 4h10v5a5 5 0 0 1-10 0V4Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-                <path d="M5 6H3v2a4 4 0 0 0 4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                <path d="M19 6h2v2a4 4 0 0 1-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-              </svg>
-            </span>
-            <h2 class="text-xl font-semibold tracking-tight">荣誉与奖励</h2>
-          </div>
-
-          <div class="mt-5 grid gap-4 sm:grid-cols-2">
-            <div class="award-tile">
-              <p class="award-title">EEE Global Merit Award</p>
-              <p class="award-meta">南洋理工大学</p>
-            </div>
-            <div class="award-tile">
-              <p class="award-title">National Silver Award</p>
-              <p class="award-meta">“Internet+” 大赛（全国前 1%）</p>
-            </div>
-            <div class="award-tile sm:col-span-2">
-              <p class="award-title">University Academic Scholarships</p>
-              <p class="award-meta">东北大学（2021-2022, 2024-2025）</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Skills -->
-        <div id="skills" class="mt-8 rounded-2xl bg-white/80 p-6 shadow-soft ring-1 ring-slate-200/60 sm:p-8">
-          <div class="flex items-center gap-3">
-            <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-ntured/10 text-ntured ring-1 ring-ntured/15">
-              <!-- code icon -->
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <path d="m8 9-3 3 3 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="m16 9 3 3-3 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M14 4 10 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-              </svg>
-            </span>
-            <h2 class="text-xl font-semibold tracking-tight">技能</h2>
-          </div>
-
-          <div class="mt-6 grid gap-4 lg:grid-cols-3">
-            <div class="skill-card">
-              <p class="skill-title">编程</p>
-              <div class="mt-2 flex flex-wrap gap-2">
-                <span class="skill-pill">Python</span>
-                <span class="skill-pill">C++</span>
-                <span class="skill-pill">LaTeX</span>
-              </div>
-            </div>
-
-            <div class="skill-card">
-              <p class="skill-title">AI / LLM</p>
-              <div class="mt-2 flex flex-wrap gap-2">
-                <span class="skill-pill">PyTorch</span>
-                <span class="skill-pill">Hugging Face</span>
-                <span class="skill-pill">LoRA</span>
-              </div>
-            </div>
-
-            <div class="skill-card">
-              <p class="skill-title">机器人</p>
-              <div class="mt-2 flex flex-wrap gap-2">
-                <span class="skill-pill">ROS</span>
-                <span class="skill-pill">Gazebo</span>
-                <span class="skill-pill">YOLO</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Contact -->
-        <div id="contact" class="mt-8 rounded-2xl bg-white/80 p-6 shadow-soft ring-1 ring-slate-200/60 sm:p-8">
-          <div class="flex items-center gap-3">
-            <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-ntublue/10 text-ntublue ring-1 ring-ntublue/15">
-              <!-- mail icon -->
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <path d="M4 4h16v16H4V4Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-                <path d="m4 6 8 7 8-7" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-              </svg>
-            </span>
-            <h2 class="text-xl font-semibold tracking-tight">联系</h2>
-          </div>
-
-          <div class="mt-5 grid gap-4 grid-cols-1 sm:grid-cols-3">
-            <div class="contact-tile">
-              <p class="contact-label">邮箱</p>
-              <div class="contact-value">
-                <a class="contact-link" href="mailto:yunzhe003@e.ntu.edu.sg">yunzhe003@e.ntu.edu.sg</a>
-              </div>
-            </div>
-
-            <div class="contact-tile">
-              <p class="contact-label">链接</p>
-              <div class="contact-value text-slate-700">
-                GitHub：
-                <a class="contact-link" href="https://yunzhegao.github.io/cn.html" target="_blank" rel="noreferrer noopener">yunzhegao.github.io</a>
-              </div>
-            </div>
-
-            <div class="contact-tile">
-              <p class="contact-label">Curriculum Vitae</p>
-              <div class="contact-value">
-                <button
-                  type="button"
-                  class="contact-link button-like bg-transparent border-none p-0 cursor-pointer"
-                  onclick="openCvPreview()"
-                >
-                  预览我的简历
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- CV Preview Modal -->
-        <div
-          id="cv-modal"
-          class="fixed inset-0 z-50 hidden"
-          role="dialog"
-          aria-modal="true"
-          aria-hidden="true"
-        >
-          <div class="absolute inset-0 bg-slate-900/60" onclick="closeCvPreview()" aria-hidden="true"></div>
-          <div class="relative mx-auto mt-10 h-[80vh] w-[95vw] max-w-4xl overflow-hidden rounded-2xl bg-white shadow-xl ring-1 ring-slate-200">
-            <div class="flex items-center justify-between border-b border-slate-200 px-4 py-3">
-              <p class="text-sm font-semibold text-slate-900">简历预览</p>
-              <button
-                type="button"
-                class="rounded-md border border-slate-200 bg-white px-3 py-1 text-sm font-semibold text-slate-800 hover:bg-slate-50"
-                onclick="closeCvPreview()"
-              >
-                关闭
-              </button>
-            </div>
-            <iframe
-              src="./CV_Gao_Yunzhe_NTU.pdf"
-              class="h-full w-full"
-              title="高蕴喆 简历 PDF 预览"
-            ></iframe>
-          </div>
-        </div>
-      </section>
+      <section class="contact section-pad" id="contact" aria-labelledby="contact-title"><div class="shell contact-grid"><div><p class="eyebrow">期待 2027 年博士研究机会</p><h2 id="contact-title">如果你的研究关注高效 AI 系统，欢迎与我交流。</h2></div><div class="contact-links"><a class="button button-white" href="mailto:yunzhe003@e.ntu.edu.sg">yunzhe003@e.ntu.edu.sg</a><button class="contact-text button-reset" type="button" data-open-cv>预览简历</button><a class="contact-text" href="https://yunzhegao.github.io/cn.html" target="_blank" rel="noreferrer noopener">yunzhegao.github.io</a></div></div></section>
     </main>
 
-    <footer class="py-10">
-      <div class="mx-auto max-w-5xl px-4 text-sm text-slate-500">
-        <div class="h-px w-full bg-slate-200/70"></div>
-        <p class="mt-4">© <span id="year"></span> 高蕴喆。保留所有权利。网站最后更新时间：2026-06-06 </p>
-      </div>
-    </footer>
-
-    <script>
-      document.getElementById("year").textContent = String(new Date().getFullYear());
-
-      const cvModal = document.getElementById("cv-modal");
-      function openCvPreview() {
-        if (!cvModal) return;
-        cvModal.classList.remove("hidden");
-        cvModal.setAttribute("aria-hidden", "false");
-        document.body.style.overflow = "hidden";
-      }
-
-      function closeCvPreview() {
-        if (!cvModal) return;
-        cvModal.classList.add("hidden");
-        cvModal.setAttribute("aria-hidden", "true");
-        document.body.style.overflow = "";
-      }
-
-      document.addEventListener("keydown", (e) => {
-        if (e.key === "Escape") closeCvPreview();
-      });
-    </script>
+    <footer class="site-footer"><div class="shell footer-grid"><p>© <span data-current-year></span> 高蕴喆</p><p>新加坡 · GMT+8</p><p>更新于 2026-10-20</p><a href="#top">返回顶部</a></div></footer>
+    <dialog class="cv-dialog" data-cv-dialog aria-labelledby="cv-dialog-title"><div class="dialog-header"><p id="cv-dialog-title"><strong>个人简历</strong> · PDF</p><button class="dialog-close" type="button" data-close-cv>关闭 ×</button></div><iframe src="./CV_Gao_Yunzhe_NTU.pdf" title="高蕴喆个人简历"></iframe><a class="dialog-download" href="./CV_Gao_Yunzhe_NTU.pdf" download>下载 PDF</a></dialog>
   </body>
 </html>
-
