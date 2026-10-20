@@ -68,7 +68,7 @@ button { font-size: inherit; }
 .menu-toggle[aria-expanded="true"] span:last-child { transform: translateY(-0.35rem) rotate(-45deg); }
 
 .hero { background: var(--white); }
-.hero-grid { padding-block: clamp(5.5rem, 9vw, 8rem); }
+.hero-grid { padding: clamp(2.75rem, 4.5vw, 4rem) 0 clamp(5.5rem, 9vw, 8rem); }
 .hero-copy { max-width: 62rem; margin-inline: auto; text-align: center; }
 .hero .eyebrow { margin-bottom: 2.3rem; }
 .live-dot { display: inline-block; width: 0.52rem; height: 0.52rem; margin-right: 0.4rem; border-radius: 50%; background: var(--blue); animation: live-pulse 3.2s ease-in-out infinite; }
@@ -288,7 +288,7 @@ button { font-size: inherit; }
   .mobile-nav:not([hidden]) { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.5rem; padding: 0.85rem var(--page-x) 1rem; border-top: 1px solid rgba(0, 0, 0, 0.06); background: rgba(255, 255, 255, 0.96); }
   .mobile-nav a { padding: 0.45rem 0.3rem; color: #000000; text-align: center; font-size: 0.82rem; font-weight: 700; }
   .mobile-nav a:hover { color: var(--blue); }
-  .hero-grid { padding-block: 4.5rem 5.5rem; }
+  .hero-grid { padding: 3rem 0 5.5rem; }
   .hero .eyebrow { margin-bottom: 1.9rem; }
   .hero h1 { max-width: none; font-size: clamp(3rem, 14vw, 4.2rem); line-height: 1; }
   .hero-name-cn { margin-top: 0.65rem; font-size: clamp(2.35rem, 10.5vw, 3rem); }
