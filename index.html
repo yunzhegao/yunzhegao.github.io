@@ -8,8 +8,9 @@
     <title>Gao Yunzhe — Efficient AI Systems</title>
     <link rel="icon" href="./assets/favicon.svg?v=2" type="image/svg+xml" />
     <link rel="preload" href="./assets/fonts/SourceHanSansSC-Subset.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="stylesheet" href="./styles.css?v=20261124-2" />
+    <link rel="stylesheet" href="./styles.css?v=20261124-3" />
     <script src="./script.js?v=20261020-3" defer></script>
+    <script src="/assets/site-visits.js?v=1" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -107,10 +108,29 @@
           <h2 id="footer-nav-title">More personal pages <span class="footer-nav-language">(Chinese only)</span></h2>
           <a href="https://yunzhegao.github.io/market/" hreflang="zh-CN">U.S. Market Watch</a>
         </nav>
+        <section class="footer-visits" data-site-visits aria-labelledby="footer-visits-title" hidden>
+          <div class="footer-visits-overview">
+            <h2 id="footer-visits-title">Global visits</h2>
+            <p data-visit-status role="status">Loading visit statistics</p>
+            <p data-visit-total hidden><strong data-visit-count></strong> page views across this site <span data-visit-since hidden>since <time></time></span></p>
+            <details data-visit-breakdown hidden>
+              <summary>By country or region</summary>
+              <table aria-label="Page views by country or region">
+                <thead><tr><th scope="col">Country or region</th><th scope="col">Page views</th></tr></thead>
+                <tbody></tbody>
+              </table>
+            </details>
+          </div>
+          <div class="footer-visits-map" data-visit-map role="group" aria-label="Map of visits by country or region">
+            <img src="./assets/images/site-visits-world.svg" width="1000" height="390" alt="" loading="lazy" decoding="async" />
+            <div data-visit-pins></div>
+            <div class="footer-visits-tooltip" data-visit-tooltip aria-hidden="true" hidden></div>
+          </div>
+        </section>
         <div class="footer-grid">
           <p>© <span data-current-year></span> Gao Yunzhe</p>
           <p>Singapore · GMT+8</p>
-          <p>Updated 20 Oct 2026</p>
+          <p>Updated 24 Nov 2026</p>
           <p class="footer-gpt">Built after one too many late-night talks with GPT</p>
           <a href="#top">Back to top</a>
         </div>

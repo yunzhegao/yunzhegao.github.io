@@ -8,8 +8,9 @@
     <title>高蕴喆 — 高效 AI 系统</title>
     <link rel="icon" href="./assets/favicon.svg?v=2" type="image/svg+xml" />
     <link rel="preload" href="./assets/fonts/SourceHanSansSC-Subset.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="stylesheet" href="./styles.css?v=20261124-2" />
+    <link rel="stylesheet" href="./styles.css?v=20261124-3" />
     <script src="./script.js?v=20261020-3" defer></script>
+    <script src="/assets/site-visits.js?v=1" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main">跳至主要内容</a>
@@ -82,10 +83,29 @@
           <h2 id="footer-nav-title">更多个人网页</h2>
           <a href="https://yunzhegao.github.io/market/">美股市场观察</a>
         </nav>
+        <section class="footer-visits" data-site-visits aria-labelledby="footer-visits-title" hidden>
+          <div class="footer-visits-overview">
+            <h2 id="footer-visits-title">全球访问</h2>
+            <p data-visit-status role="status">正在加载访问统计</p>
+            <p data-visit-total hidden><span data-visit-since hidden>自 <time></time> 起，</span>全站累计浏览 <strong data-visit-count></strong> 次</p>
+            <details data-visit-breakdown hidden>
+              <summary>按国家或地区查看</summary>
+              <table aria-label="各国家或地区的页面浏览量">
+                <thead><tr><th scope="col">国家或地区</th><th scope="col">浏览量</th></tr></thead>
+                <tbody></tbody>
+              </table>
+            </details>
+          </div>
+          <div class="footer-visits-map" data-visit-map role="group" aria-label="各国家或地区的访问地图">
+            <img src="./assets/images/site-visits-world.svg" width="1000" height="390" alt="" loading="lazy" decoding="async" />
+            <div data-visit-pins></div>
+            <div class="footer-visits-tooltip" data-visit-tooltip aria-hidden="true" hidden></div>
+          </div>
+        </section>
         <div class="footer-grid">
           <p>© <span data-current-year></span> 高蕴喆</p>
           <p>新加坡 · GMT+8</p>
-          <p>更新于 2026-10-20</p>
+          <p>更新于 2026-11-24</p>
           <p class="footer-gpt">与 GPT 彻夜长谈后完成</p>
           <a href="#top">返回顶部</a>
         </div>

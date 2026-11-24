@@ -1,0 +1,13 @@
+name = "yunzhegao-site-visits"
+main = "worker.mjs"
+compatibility_date = "2026-11-24"
+workers_dev = true
+preview_urls = false
+
+[observability]
+enabled = false
+
+[[d1_databases]]
+binding = "VISITS"
+database_name = "yunzhegao-site-visits"
+database_id = "5693e45f-c402-42e8-a4f6-3fdf7b42de5f"

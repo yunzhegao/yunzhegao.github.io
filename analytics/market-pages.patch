@@ -1,0 +1,25 @@
+diff --git a/.github/workflows/pages.yml b/.github/workflows/pages.yml
+--- a/.github/workflows/pages.yml
++++ b/.github/workflows/pages.yml
+@@ -65,3 +65,21 @@
++      - name: Add shared site visit counter
++        run: |
++          python3 - <<'PY'
++          import re
++          from pathlib import Path
++
++          tag = '<script src="/assets/site-visits.js?v=1" defer></script>'
++          for page in Path("dist").rglob("*.html"):
++              html = page.read_text(encoding="utf-8")
++              if tag in html:
++                  continue
++              updated, matches = re.subn(
++                  r"</head\s*>", lambda match: f"    {tag}\n{match[0]}", html, count=1, flags=re.I
++              )
++              if matches:
++                  page.write_text(updated, encoding="utf-8")
++          PY
++
+       - uses: actions/upload-pages-artifact@v4
+         with:
+           path: dist
