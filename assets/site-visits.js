@@ -5,6 +5,9 @@
   const panel = document.querySelector("[data-site-visits]");
   const requestOptions = { credentials: "omit", referrerPolicy: "no-referrer" };
   let mapCenters;
+  let lastTotal;
+  let pendingVisit;
+  let pendingStatistics;
 
   function positionTooltip(map, marker, label) {
     const tooltip = map.querySelector("[data-visit-tooltip]");
@@ -32,7 +35,7 @@
         return response.json();
       });
     } catch {
-      return;
+      return false;
     }
 
     const visibleAreas = areas.flatMap((area) => {
@@ -94,6 +97,7 @@
       selected = undefined;
       positionTooltip(map);
     };
+    return true;
   }
 
   async function showStatistics() {
@@ -102,11 +106,15 @@
     const isChinese = language.startsWith("zh");
 
     try {
-      const response = await fetch(endpoint, requestOptions);
+      const response = await fetch(endpoint, { ...requestOptions, cache: "no-store" });
       if (!response.ok) throw new Error("Statistics unavailable");
       const { total, since, countries } = await response.json();
       if (!Number.isSafeInteger(total) || total < 0 || !Array.isArray(countries)) {
         throw new Error("Invalid statistics");
+      }
+      if (total === lastTotal) {
+        status.hidden = true;
+        return;
       }
 
       const numbers = new Intl.NumberFormat(language);
@@ -144,21 +152,34 @@
       panel.querySelector("[data-visit-total]").hidden = false;
       panel.querySelector("[data-visit-breakdown]").hidden = rows.length === 0;
       status.hidden = true;
-      await showMap(areas, isChinese);
+      if (await showMap(areas, isChinese)) lastTotal = total;
     } catch {
       status.textContent = isChinese ? "访问统计暂时无法加载" : "Visit statistics are temporarily unavailable";
       status.hidden = false;
     }
   }
 
+  function refreshStatistics() {
+    if (panel.hidden || document.visibilityState !== "visible" || pendingVisit || pendingStatistics) return;
+    pendingStatistics = showStatistics().finally(() => { pendingStatistics = null; });
+  }
+
   async function recordPageView() {
-    if (panel) panel.hidden = false;
-    try {
-      await fetch(endpoint, { ...requestOptions, method: "POST", keepalive: true });
-    } catch {
-      // A blocked report can still leave the read-only statistics accessible.
-    }
-    if (panel) await showStatistics();
+    const report = fetch(endpoint, { ...requestOptions, method: "POST", keepalive: true }).catch(() => {});
+    if (!panel) return;
+
+    panel.hidden = false;
+    pendingVisit = report;
+    await report;
+    if (pendingVisit !== report) return;
+    pendingVisit = null;
+    await pendingStatistics;
+    refreshStatistics();
+  }
+
+  if (panel) {
+    window.setInterval(refreshStatistics, 15_000);
+    document.addEventListener("visibilitychange", refreshStatistics);
   }
 
   if (document.prerendering) {

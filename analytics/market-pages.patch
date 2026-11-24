@@ -8,10 +8,10 @@ diff --git a/.github/workflows/pages.yml b/.github/workflows/pages.yml
 +          import re
 +          from pathlib import Path
 +
-+          tag = '<script src="/assets/site-visits.js?v=1" defer></script>'
++          tag = '<script src="/assets/site-visits.js?v=4" defer></script>'
 +          for page in Path("dist").rglob("*.html"):
 +              html = page.read_text(encoding="utf-8")
-+              if tag in html:
++              if "/assets/site-visits.js" in html or re.search(r'<meta[^>]+http-equiv="refresh"', html, re.I):
 +                  continue
 +              updated, matches = re.subn(
 +                  r"</head\s*>", lambda match: f"    {tag}\n{match[0]}", html, count=1, flags=re.I
