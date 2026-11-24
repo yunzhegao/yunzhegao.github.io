@@ -47,12 +47,14 @@
     });
     const maxViews = Math.max(1, ...visibleAreas.map((area) => area.views));
     const maxLog = Math.log(maxViews);
+    const minDiameter = 9;
+    const maxDiameter = 12;
     let selected;
     positionTooltip(map);
 
     const markers = visibleAreas.map(({ name, views, formattedViews, x, y }) => {
       const scale = maxLog ? Math.log(views) / maxLog : 1;
-      const diameter = 5 + 11 * scale;
+      const diameter = minDiameter + (maxDiameter - minDiameter) * scale;
       const marker = document.createElement("button");
       const label = isChinese
         ? `${name} · ${formattedViews} 次浏览`

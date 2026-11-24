@@ -4,7 +4,7 @@
 
 Cloudflare 提供请求所属国家或地区的两字母代码。D1 只保存每个代码的累计次数和首次访问时间，其中 `XX` 表示未知。脚本不使用 Cookie，也不发送访问页面路径。主页使用新加坡时间显示统计起点。
 
-主页地图的陆地来自 [Natural Earth](https://www.naturalearthdata.com/about/terms-of-use/) 的公共领域数据，沿用 [Market 地图底图](https://yunzhegao.github.io/market/assets/world-globe.svg) 的轮廓。圆点采用 [Google Developers countries.csv](https://developers.google.com/public-data/docs/canonical/countries_csv?hl=en) 的地区代表坐标，经四舍五入并补充部分地区，使用 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可。显示直径按访问量对数缩放，范围为 5 到 16 像素，最大值固定为 16 像素。没有坐标的访问也保留在地区列表和总数里。
+主页地图的陆地来自 [Natural Earth](https://www.naturalearthdata.com/about/terms-of-use/) 的公共领域数据，沿用 [Market 地图底图](https://yunzhegao.github.io/market/assets/world-globe.svg) 的轮廓。圆点采用 [Google Developers countries.csv](https://developers.google.com/public-data/docs/canonical/countries_csv?hl=en) 的地区代表坐标，经四舍五入并补充部分地区，使用 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可。显示直径按访问量对数缩放，范围为 9 到 12 像素，最大值固定为 12 像素。没有坐标的访问也保留在地区列表和总数里。
 
 ## 发布
 
