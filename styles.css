@@ -247,7 +247,25 @@ button { font-size: inherit; }
 .contact-text:hover { color: var(--blue-dark); }
 
 .site-footer { border-top: 1px solid var(--line); background: var(--canvas); color: var(--muted); }
-.footer-grid { display: grid; grid-template-columns: 0.85fr 0.85fr 1fr 1.65fr auto; gap: 1rem; padding-block: 1.5rem 3rem; font-size: 0.75rem; }
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0 clamp(1.25rem, 3vw, 2.5rem);
+  padding-block: clamp(0.55rem, 1.5vw, 1rem);
+  font-size: 0.9rem;
+}
+.footer-nav h2 { margin: 0; color: var(--ink); font-size: inherit; }
+.footer-nav-language { color: var(--muted); font-weight: 400; }
+.footer-nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+  color: var(--blue-dark);
+  font-weight: 700;
+}
+.footer-nav a:hover { text-decoration: underline; text-underline-offset: 0.2em; }
+.footer-grid { display: grid; grid-template-columns: 0.85fr 0.85fr 1fr 1.65fr auto; gap: 1rem; padding-block: 1.5rem 3rem; border-top: 1px solid var(--line); font-size: 0.75rem; }
 .footer-grid p { margin: 0; }
 .footer-grid a { justify-self: end; color: var(--blue); }
 .footer-grid a:hover { color: var(--blue-dark); }
