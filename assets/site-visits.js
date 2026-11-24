@@ -116,10 +116,9 @@
         const time = sinceLabel.querySelector("time");
         time.dateTime = date.toISOString();
         time.textContent = new Intl.DateTimeFormat(language, {
-          dateStyle: "medium",
-          timeStyle: "short",
+          dateStyle: "long",
           timeZone: "Asia/Singapore",
-        }).format(date) + " (GMT+8)";
+        }).format(date);
       }
       sinceLabel.hidden = !date;
 
